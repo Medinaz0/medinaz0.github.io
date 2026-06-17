@@ -1,4 +1,4 @@
-serve:
+run:
 	bundle3.2 exec jekyll serve --livereload
 
 build:
