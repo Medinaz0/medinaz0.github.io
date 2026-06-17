@@ -4,3 +4,6 @@ _site
 _drafts
 .DS_Store
 _templates
+node_modules/
+package-lock.json
+_site/

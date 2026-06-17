@@ -1,0 +1,16 @@
+node_modules/
+_site/
+.jekyll-cache/
+vendor/
+_layouts/
+_includes/
+# Prettier mangles YAML frontmatter in SKILL.md (e.g. ** globs in `paths`)
+.agents/skills/**/SKILL.md
+.next
+out
+build
+coverage
+test-results
+playwright-report
+Gemfile
+Gemfile.lock
