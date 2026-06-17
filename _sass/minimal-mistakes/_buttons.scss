@@ -11,13 +11,13 @@
   display: inline-block;
   margin-bottom: 0.25em;
   padding: 0.5em 1em;
-  font-family: $sans-serif;
+  font-family: $monospace;
   font-size: $type-size-6;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   border-width: 0;
-  border-radius: $border-radius;
+  border-radius: 2px;
   cursor: pointer;
 
   .icon {
@@ -51,6 +51,9 @@
 
       &:hover {
         @include yiq-contrasted(mix(#000, $color, 20%));
+        @if ($buttoncolor == primary) {
+          box-shadow: 0 0 12px rgba(0, 255, 102, 0.3);
+        }
       }
     }
   }
