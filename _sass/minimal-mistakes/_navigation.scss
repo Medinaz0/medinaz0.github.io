@@ -12,7 +12,7 @@
   max-width: 100%;
   padding-left: 1em;
   padding-right: 1em;
-  font-family: $sans-serif;
+  font-family: $monospace;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.3s;
@@ -61,7 +61,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-family: $sans-serif;
+    font-family: $monospace;
   }
 
   li {
@@ -73,28 +73,30 @@
       display: block;
       margin-bottom: 0.25em;
       padding: 0.5em 1em;
-      font-family: $sans-serif;
+      font-family: $monospace;
       font-size: 14px;
       font-weight: bold;
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: $muted-text-color;
-      border: 1px solid mix(#000, $border-color, 25%);
+      color: #888888;
+      border: 1px solid #333;
       border-radius: 0;
 
       &:hover {
-        color: $link-color-hover;
+        color: #00ff66;
+        border-color: #00ff66;
       }
 
       &.current,
       &.current.disabled {
-        color: #fff;
-        background: $primary-color;
+        color: #000000;
+        background: #00ff66;
+        border-color: #00ff66;
       }
 
       &.disabled {
-        color: rgba($muted-text-color, 0.5);
+        color: #444;
         pointer-events: none;
         cursor: not-allowed;
       }
@@ -104,15 +106,15 @@
       margin-left: 0;
 
       a {
-        border-top-left-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
       }
     }
 
     &:last-child {
       a {
-        border-top-right-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
       }
     }
   }
@@ -123,17 +125,18 @@
     padding: 1em 2em;
     float: left;
     width: 50%;
-    font-family: $sans-serif;
+    font-family: $monospace;
     font-size: $type-size-5;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: $muted-text-color;
-    border: 1px solid mix(#000, $border-color, 25%);
-    border-radius: $border-radius;
+    color: #888;
+    border: 1px solid #333;
+    border-radius: 2px;
 
     &:hover {
-      @include yiq-contrasted($muted-text-color);
+      color: #00ff66;
+      border-color: #00ff66;
     }
 
     &:first-child {
@@ -148,7 +151,7 @@
     }
 
     &.disabled {
-      color: rgba($muted-text-color, 0.5);
+      color: #444;
       pointer-events: none;
       cursor: not-allowed;
     }
@@ -500,20 +503,19 @@
      ========================================================================== */
 
 .toc {
-  font-family: $sans-serif-narrow;
-  color: $gray;
-  background-color: $background-color;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  -webkit-box-shadow: $box-shadow;
-  box-shadow: $box-shadow;
+  font-family: $monospace;
+  color: #888;
+  background-color: #050505;
+  border: 1px solid #1a1a1a;
+  border-radius: 2px;
+  box-shadow: none;
 
   .nav__title {
-    color: #fff;
+    color: #000000;
     font-size: $type-size-6;
-    background: $primary-color;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+    background: #00ff66;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
   }
 
   // Scrollspy marks toc items as .active when they are in focus
@@ -536,13 +538,13 @@
   a {
     display: block;
     padding: 0.25rem 0.75rem;
-    color: $muted-text-color;
+    color: #888;
     font-weight: bold;
     line-height: 1.5;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid #1a1a1a;
 
     &:hover {
-      color: $text-color;
+      color: #00ff66;
     }
   }
 
