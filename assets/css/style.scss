@@ -6,24 +6,37 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* override syntax highlighting (base16) */
-$base00: #111111 !default;
-$base01: #242422 !default;
-$base02: #484844 !default;
-$base03: #6c6c66 !default;
-$base04: #918f88 !default;
-$base05: #b5b3aa !default;
-$base06: #d9d7cc !default;
-$base07: #fdfbee !default;
-$base08: #ff6c60 !default;
-$base09: #e9c062 !default;
-$base0a: #ffffb6 !default;
-$base0b: #a8ff60 !default;
-$base0c: #c6c5fe !default;
-$base0d: #96cbfe !default;
-$base0e: #ff73fd !default;
-$base0f: #b18a3d !default;
+/* override syntax highlighting (hacker theme) */
+$base00: #0a0a0a !default;  // background
+$base01: #141414 !default;
+$base02: #1a1a1a !default;
+$base03: #444444 !default;  // comments
+$base04: #666666 !default;
+$base05: #e0e0e0 !default;  // default text
+$base06: #f0f0f0 !default;
+$base07: #ffffff !default;
+$base08: #ff3355 !default;  // error, variable
+$base09: #ffaa00 !default;  // number, literal
+$base0a: #ffcc00 !default;  // class, type
+$base0b: #00ff66 !default;  // string — hacker green
+$base0c: #33aaff !default;  // operator, namespace
+$base0d: #66bbff !default;  // function, attribute
+$base0e: #ff66ff !default;  // keyword — magenta
+$base0f: #cc8844 !default;
 
 html {
   font-size: 16px; // global font size
+}
+
+/* Scrollbar personalizada estilo terminal */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff66;
 }
