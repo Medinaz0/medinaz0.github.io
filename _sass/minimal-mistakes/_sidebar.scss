@@ -128,11 +128,11 @@
 
   img {
     max-width: 110px;
-    border-radius: 50%;
+    border-radius: 0;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
+      padding: 3px;
+      border: 1px solid #333;
     }
   }
 }
@@ -166,12 +166,16 @@
   }
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
+  font-family: $monospace;
   font-size: $type-size-5;
+  color: #00ff66;
 }
 
 .author__bio {
   margin: 0;
+  font-family: $monospace;
+  font-size: $type-size-7;
+  color: #888;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -183,7 +187,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $sans-serif;
+  font-family: $monospace;
   z-index: 10;
   position: relative;
   cursor: pointer;
@@ -281,12 +285,13 @@
     padding-right: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
-    color: inherit;
+    color: #ccc;
     font-size: $type-size-5;
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+      color: #00ff66;
+      text-decoration: none;
     }
   }
 }
