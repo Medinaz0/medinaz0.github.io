@@ -24,7 +24,9 @@ layout: default
     animation: blink 1s step-end infinite;
   }
   @keyframes blink {
-    50% { border-color: transparent; }
+    50% {
+      border-color: transparent;
+    }
   }
   .error-prompt {
     color: #666;
@@ -43,7 +45,5 @@ layout: default
 <div class="container">
   <p class="error-code">404</p>
   <p class="error-message">File not found</p>
-  <p class="error-prompt">
-    $ <a href="/">cd ~ &amp;&amp; ls</a>
-  </p>
+  <p class="error-prompt">$ <a href="/">cd ~ &amp;&amp; ls</a></p>
 </div>
