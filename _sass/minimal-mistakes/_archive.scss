@@ -20,14 +20,24 @@
 
 .archive__item {
   position: relative;
+  padding: 0.75em;
+  border-left: 2px solid transparent;
+  transition: border-color 0.2s ease, background 0.2s ease;
+
+  &:hover {
+    border-left-color: #00ff66;
+    background: rgba(0, 255, 102, 0.02);
+  }
 }
 
 .archive__subtitle {
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
   font-size: $type-size-5;
-  color: $muted-text-color;
-  border-bottom: 1px solid $border-color;
+  color: #00ff66;
+  border-bottom: 1px solid #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -36,10 +46,20 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  font-family: $monospace;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+      color: #00ff66;
+      text-shadow: 0 0 8px rgba(0, 255, 102, 0.3);
+    }
+  }
 
   a + a {
     opacity: 0.5;
