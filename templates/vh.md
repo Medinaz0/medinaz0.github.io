@@ -5,7 +5,7 @@ excerpt: ''
 date: ${DATE}
 classes: wide
 header:
-  teaser: /assets/images/${IMAGE_PREFIX}-${SLUG}/${SLUG}_logo.png
+  teaser: /assets/images/vulnhublogo.png
   teaser_home_page: true
   icon: ${PLATFORM_ICON}
 categories:
