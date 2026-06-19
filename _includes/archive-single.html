@@ -44,7 +44,7 @@
     {% if post.header.teaser_home_page and post.excerpt %}
       <div itemprop="description">
         <div style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 10px;">
-          <img src="{{ post.header.teaser }}" alt="" style="max-width: 200px; width: 100%; height: auto;">
+          <img src="{{ post.header.teaser }}" alt="" style="width: 200px; height: 110px; object-fit: contain; display: block; flex-shrink: 0;">
           <table style="border-collapse: collapse; white-space: nowrap;">
             {% if post.os %}<tr><td style="padding: 2px 8px; font-weight: bold;">OS</td><td style="padding: 2px 8px;">{{ post.os }}</td></tr>{% endif %}
             {% if post.difficulty %}<tr><td style="padding: 2px 8px; font-weight: bold;">Difficulty</td><td style="padding: 2px 8px;">{{ post.difficulty }}</td></tr>{% endif %}
