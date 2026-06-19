@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "${NAME}"
-excerpt: ""
+title: '${NAME}'
+excerpt: ''
 date: ${DATE}
 classes: wide
 header:
@@ -9,13 +9,13 @@ header:
   teaser_home_page: true
   icon: ${PLATFORM_ICON}
 categories:
-  - ${PLATFORM_CATEGORY}
+  - Vuln Hub
 tags:
   -
-os: 
-difficulty: 
-release: 
-ip: 
+os:
+difficulty:
+release:
+ip:
 ---
 
 ![](/assets/images/${IMAGE_PREFIX}-${SLUG}/${SLUG}_logo.png)
