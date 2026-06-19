@@ -41,7 +41,26 @@
       {% if post.read_time %}<i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;{% include read-time.html %}{% endif %}
     </p>
 
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{% if post.header.teaser_home_page %}<img src="{{ post.header.teaser }}" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">{% endif %}{{ post.excerpt | markdownify | strip_html | truncate: 1024 }}</p>{% endif %}
+    {% if post.header.teaser_home_page and post.excerpt %}
+      <div itemprop="description">
+        <div style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 10px;">
+          <img src="{{ post.header.teaser }}" alt="" style="max-width: 200px; width: 100%; height: auto;">
+          <table style="border-collapse: collapse; white-space: nowrap;">
+            {% if post.os %}<tr><td style="padding: 2px 8px; font-weight: bold;">OS</td><td style="padding: 2px 8px;">{{ post.os }}</td></tr>{% endif %}
+            {% if post.difficulty %}<tr><td style="padding: 2px 8px; font-weight: bold;">Difficulty</td><td style="padding: 2px 8px;">{{ post.difficulty }}</td></tr>{% endif %}
+            {% if post.release %}<tr><td style="padding: 2px 8px; font-weight: bold;">Release</td><td style="padding: 2px 8px;">{{ post.release }}</td></tr>{% endif %}
+            {% if post.ip %}<tr><td style="padding: 2px 8px; font-weight: bold;">IP</td><td style="padding: 2px 8px;">{{ post.ip }}</td></tr>{% endif %}
+          </table>
+        </div>
+        <p class="archive__item-excerpt">
+          {{ post.excerpt | markdownify | strip_html | truncate: 1024 }}
+        </p>
+      </div>
+    {% elsif post.excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">
+        {{ post.excerpt | markdownify | strip_html | truncate: 1024 }}
+      </p>
+    {% endif %}
     <i class="fas fa-tags"></i>
     {% for tag in post.tags %}
       <a href="/tags/#{{ tag }}" class="page__meta btn" rel="tag">{{ tag }}</a>
