@@ -139,6 +139,8 @@ exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
+  - templates/
+  - platforms.conf
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
