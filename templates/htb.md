@@ -12,6 +12,10 @@ categories:
   - ${PLATFORM_CATEGORY}
 tags:
   -
+os: 
+difficulty: 
+release: 
+ip: 
 ---
 
 ![](/assets/images/${IMAGE_PREFIX}-${SLUG}/${SLUG}_logo.png)
