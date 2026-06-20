@@ -20,4 +20,4 @@ so take them as a fellow learner's notes rather than expert guides.
 
 For personal info, experience, and professional background, visit my
 portfolio:
-[portfolio-delta-ecru-78.vercel.app](https://portfolio-delta-ecru-78.vercel.app/)
+[santiago-medina.vercel.app](https://santiago-medina.vercel.app/)
