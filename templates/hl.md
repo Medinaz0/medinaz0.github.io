@@ -9,7 +9,7 @@ header:
   teaser_home_page: true
   icon: ${PLATFORM_ICON}
 categories:
-  - Home Labbing
+  - Homelab
 tags:
   -
 os:
