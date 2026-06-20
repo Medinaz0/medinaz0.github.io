@@ -46,13 +46,19 @@
         <div style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 10px;">
           <img src="{{ post.header.teaser }}" alt="" style="width: 200px; height: 110px; object-fit: contain; display: block; flex-shrink: 0;">
           <table style="border-collapse: collapse; white-space: nowrap;">
-            {% if post.os %}<tr><td style="padding: 2px 8px; font-weight: bold; color: #00ff66;">OS</td><td style="padding: 2px 8px;">{{ post.os }}</td></tr>{% endif %}
+            {% if post.os %}
+              {% assign o = post.os | downcase %}
+              {% if o == "linux" %}{% assign oc = "#FFA726" %}
+              {% elsif o == "windows" %}{% assign oc = "#29B6F6" %}
+              {% else %}{% assign oc = "#FFEE58" %}
+              {% endif %}
+            <tr><td style="padding: 2px 8px; font-weight: bold; color: #00ff66;">OS</td><td style="padding: 2px 8px; color: {{ oc }}; font-weight: bold;">{{ post.os }}</td></tr>{% endif %}
             {% if post.difficulty %}
               {% assign d = post.difficulty | downcase %}
-              {% if d == "easy" %}{% assign dc = "#4CAF50" %}
-              {% elsif d == "medium" %}{% assign dc = "#FF9800" %}
-              {% elsif d == "hard" %}{% assign dc = "#f44336" %}
-              {% elsif d == "insane" %}{% assign dc = "#9C27B0" %}
+              {% if d == "easy" %}{% assign dc = "#66BB6A" %}
+              {% elsif d == "medium" %}{% assign dc = "#FFA726" %}
+              {% elsif d == "hard" %}{% assign dc = "#EF5350" %}
+              {% elsif d == "insane" %}{% assign dc = "#AB47BC" %}
               {% else %}{% assign dc = "#ffffff" %}
               {% endif %}
             <tr><td style="padding: 2px 8px; font-weight: bold; color: #00ff66;">Difficulty</td><td style="padding: 2px 8px; color: {{ dc }}; font-weight: bold;">{{ post.difficulty }}</td></tr>{% endif %}
