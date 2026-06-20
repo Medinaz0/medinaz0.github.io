@@ -1,5 +1,5 @@
 ---
-title: "Info"
+title: 'Info'
 permalink: /info/
 layout: single
 author_profile: true
@@ -12,24 +12,9 @@ so take them as a fellow learner's notes rather than expert guides.
 
 ## Platforms
 
-- **Hack The Box** 
-- **VulnHub** 
-- **Home labs**
-
-
-## Walkthrough structure
-
-Each write-up is organized roughly like this:
-
-- Summary (OS, difficulty, tools used)
-- Enumeration and reconnaissance
-- Exploitation
-- Post-exploitation / privilege escalation
-- What I learned
-
-I tag posts by **category** (platform), **tags** (techniques, tools,
-OS), and **year archive** so it's easier to browse.
-
+- **Hack The Box**
+- **VulnHub**
+- **Homelabs**
 
 ## About me
 
