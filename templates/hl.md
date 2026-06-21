@@ -18,7 +18,7 @@ release:
 ip:
 ---
 
-![](/assets/images/${IMAGE_PREFIX}-${SLUG}/${SLUG}_logo.png)
+{% include info-card.html %}
 
 ## Reconnaissance
 
