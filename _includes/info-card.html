@@ -1,0 +1,32 @@
+{% assign item = include.item | default: page %}
+{% if item.header.teaser %}
+  <table style="border-collapse: collapse; margin-bottom: 10px;">
+    <tr>
+      <td style="padding-right: 20px; vertical-align: top;">
+        <img src="{{ item.header.teaser }}" alt="" style="width: 200px; height: 110px; object-fit: contain; display: block;">
+      </td>
+      <td style="vertical-align: top;">
+        <table style="border-collapse: collapse; white-space: nowrap;">
+      {% if item.os %}
+        {% assign o = item.os | downcase %}
+        {% if o == "linux" %}{% assign oc = "#FFA726" %}
+        {% elsif o == "windows" %}{% assign oc = "#29B6F6" %}
+        {% else %}{% assign oc = "#FFEE58" %}
+        {% endif %}
+      <tr><td style="padding: 2px 8px; font-weight: bold; color: #00ff66;">OS</td><td style="padding: 2px 8px; color: {{ oc }}; font-weight: bold;">{{ item.os }}</td></tr>{% endif %}
+      {% if item.difficulty %}
+        {% assign d = item.difficulty | downcase %}
+        {% if d == "easy" %}{% assign dc = "#66BB6A" %}
+        {% elsif d == "medium" %}{% assign dc = "#FFA726" %}
+        {% elsif d == "hard" %}{% assign dc = "#EF5350" %}
+        {% elsif d == "insane" %}{% assign dc = "#AB47BC" %}
+        {% else %}{% assign dc = "#ffffff" %}
+        {% endif %}
+      <tr><td style="padding: 2px 8px; font-weight: bold; color: #00ff66;">Difficulty</td><td style="padding: 2px 8px; color: {{ dc }}; font-weight: bold;">{{ item.difficulty }}</td></tr>{% endif %}
+      {% if item.release %}<tr><td style="padding: 2px 8px; font-weight: bold; color: #00ff66;">Release</td><td style="padding: 2px 8px;">{{ item.release }}</td></tr>{% endif %}
+      {% if item.ip %}<tr><td style="padding: 2px 8px; font-weight: bold; color: #00ff66;">IP</td><td style="padding: 2px 8px; color: #64b5f6;">{{ item.ip }}</td></tr>{% endif %}
+        </table>
+      </td>
+    </tr>
+  </table>
+{% endif %}
