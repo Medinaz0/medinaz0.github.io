@@ -12,6 +12,7 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="{{ post.url | relative_url }}" class="archive__item-permalink" aria-label="Read: {{ title | strip_html }}"></a>
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -27,7 +28,7 @@
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+        {{ title }}
         {% if post.header.icon %}<img src="{{ post.header.icon }}" alt="" style="height:24px; margin-left:10px">{% endif %}
       {% endif %}
     </h2>
