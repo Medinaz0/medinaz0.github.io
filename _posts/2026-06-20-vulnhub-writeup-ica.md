@@ -13,13 +13,10 @@ categories:
 tags:
   - web
   - credential-exposure
-  - mysql
   - base64
-  - ssh-bruteforce
+  - bruteforce
   - suid
   - path-hijacking
-  - qdp
-  - hydra
 os: linux
 difficulty: Easy
 release: 2021-09-25
@@ -27,7 +24,9 @@ ip: 192.168.20.75
 ---
 
 {% include info-card.html %}
+
 ### Machine Link
+
 [ICA: 1 ~ VulnHub](https://www.vulnhub.com/entry/ica-1,748/#networking)
 
 ### Tools Used
