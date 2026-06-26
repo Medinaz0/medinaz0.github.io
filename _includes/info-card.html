@@ -17,6 +17,7 @@
       {% if item.difficulty %}
         {% assign d = item.difficulty | downcase %}
         {% if d == "easy" %}{% assign dc = "#66BB6A" %}
+        {% elsif d == "very easy" %}{% assign dc = "#00FFE8" %}
         {% elsif d == "medium" %}{% assign dc = "#FFA726" %}
         {% elsif d == "hard" %}{% assign dc = "#EF5350" %}
         {% elsif d == "insane" %}{% assign dc = "#AB47BC" %}
