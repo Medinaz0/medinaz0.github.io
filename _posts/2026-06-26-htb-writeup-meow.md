@@ -147,3 +147,5 @@ root@Meow:~# cat flag.txt
 <span style="color: #bb66ff;">b40abdfe23665f766f9c61ecba8a4c19</span>
 root@Meow:~# 
 </code></pre>
+
+![You have solved Meow](/assets/images/htb-writeup-meow/You%20have%20solved%20Meow!.png)
