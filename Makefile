@@ -5,4 +5,4 @@ build:
 	bundle3.2 exec jekyll build --incremental
 
 fmt:
-	npx prettier --write .
+	pnpm exec prettier --write .
