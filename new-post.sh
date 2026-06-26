@@ -135,5 +135,4 @@ envsubst '${NAME} ${SLUG} ${DATE} ${PLATFORM_NAME} ${PLATFORM_ICON} ${PLATFORM_C
 # ── Done ──────────────────────────────────────────────────────
 echo "✅ Created: $POST_FILE"
 echo "✅ Created: $IMG_DIR/"
-echo "📝 Opening in nvim..."
-nvim "$POST_FILE"
+
