@@ -75,7 +75,6 @@ Nmap done: 1 IP address (1 host up) scanned in 15.97 seconds
            Raw packets sent: 77062 (3.391MB) | Rcvd: 71647 (2.866MB)
 </code></pre>
 
-
 ## Task 4
 
 ![Task 4](/assets/images/htb-writeup-dancing/Task 4.png)
@@ -91,7 +90,6 @@ Nmap done: 1 IP address (1 host up) scanned in 15.97 seconds
 	WorkShares      Disk      
 SMB1 disabled -- no workgroup available
 </code></pre>
-
 
 ## Task 5
 
@@ -114,7 +112,6 @@ smb: \> ls
 smb: \> 
 </code></pre>
 
-
 ## Task 7
 
 ![Task 7](/assets/images/htb-writeup-dancing/Task 7.png)
@@ -134,7 +131,6 @@ smb: \>
 ❯ catnp James.P\\flag.txt
 <span style="color: #bb66ff;">5f61c10dffbc77a704d76016a22f1664#</span>                                                                                                                                                                                                                         
 </code></pre>
-
 
 ## Submit Flag
 

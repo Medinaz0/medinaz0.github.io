@@ -46,7 +46,6 @@ PING 10.129.96.44 (10.129.96.44) 56(84) bytes of data.
 rtt min/avg/max/mdev = 384.137/384.137/384.137/0.000 ms
 </code></pre>
 
-
 ## Task 5
 
 ![Task 5](/assets/images/htb-writeup-fawn/Task 5.png)
@@ -80,11 +79,10 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 3.67 seconds
 </code></pre>
 
-
 ## Task 6
 
 ![Task 6](/assets/images/htb-writeup-fawn/Task 6.png)
- 
+
 ## Task 7
 
 ![Task 7](/assets/images/htb-writeup-fawn/Task 7.png)
@@ -105,7 +103,6 @@ Remote system type is UNIX.
 Using binary mode to transfer files.
 ftp> 
 </code></pre>
-
 
 ## Task 9
 

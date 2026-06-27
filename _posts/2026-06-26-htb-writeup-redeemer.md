@@ -47,7 +47,6 @@ Nmap done: 1 IP address (1 host up) scanned in 15.70 seconds
            Raw packets sent: 75228 (3.310MB) | Rcvd: 68213 (2.729MB)
 </code></pre>
 
-
 ## Task 2
 
 ![Task 2](/assets/images/htb-writeup-redeemer/Task 2.png)
@@ -68,7 +67,6 @@ Nmap done: 1 IP address (1 host up) scanned in 15.70 seconds
 ❯ redis-cli -h 10.129.96.213
 10.129.96.213:6379> 
 </code></pre>
-
 
 ## Task 6
 
@@ -412,7 +410,6 @@ db0:keys=4,expires=0,avg_ttl=0
 10.129.96.213:6379> 
 </code></pre>
 
-
 ## Task 7
 
 ![Task 7](/assets/images/htb-writeup-redeemer/Task 7.png)
@@ -430,7 +427,6 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 7.10 seconds
 </code></pre>
 
-
 ## Task 8
 
 ![Task 8](/assets/images/htb-writeup-redeemer/Task 8.png)
@@ -439,7 +435,6 @@ Nmap done: 1 IP address (1 host up) scanned in 7.10 seconds
 10.129.96.213:6379> SELECT 0
 OK
 </code></pre>
-
 
 ## Task 9
 
@@ -451,7 +446,6 @@ OK
 db0:keys=4,expires=0,avg_ttl=0
 10.129.96.213:6379> 
 </code></pre>
-
 
 ## Task 10
 
@@ -474,7 +468,6 @@ db0:keys=4,expires=0,avg_ttl=0
 "1c98492cd337252698d0c5f631dfb7ae"
 10.129.96.213:6379> 
 </code></pre>
-
 
 ## Submit Flag
 
