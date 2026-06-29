@@ -29,5 +29,47 @@
   {%- endcase -%}
 {% endif %}
 
+<!-- Auto-hiding header: hide on scroll down, show on scroll up -->
+<script>
+(function() {
+  var masthead = document.querySelector('.masthead');
+  if (!masthead) return;
+
+  var lastScroll = 0;
+  var ticking = false;
+  var threshold = 10;
+  var height = masthead.offsetHeight;
+
+  document.body.style.paddingTop = height + 'px';
+
+  window.addEventListener('resize', function() {
+    height = masthead.offsetHeight;
+    document.body.style.paddingTop = height + 'px';
+  });
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        var scroll = window.pageYOffset;
+
+        if (scroll > threshold) {
+          if (scroll > lastScroll + threshold) {
+            masthead.classList.add('masthead--hidden');
+          } else if (scroll < lastScroll - threshold) {
+            masthead.classList.remove('masthead--hidden');
+          }
+        } else {
+          masthead.classList.remove('masthead--hidden');
+        }
+
+        lastScroll = scroll;
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+})();
+</script>
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
