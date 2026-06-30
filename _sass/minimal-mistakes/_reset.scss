@@ -37,13 +37,13 @@ body {
 /* Selected elements */
 
 ::-moz-selection {
-  color: #fff;
-  background: #000;
+  background: rgba(255, 255, 255, 0.15);
+  color: inherit;
 }
 
 ::selection {
-  color: #fff;
-  background: #000;
+  background: rgba(255, 255, 255, 0.15);
+  color: inherit;
 }
 
 /* Display HTML5 elements in IE6-9 and FF3 */
