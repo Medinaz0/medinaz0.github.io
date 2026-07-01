@@ -113,6 +113,14 @@
         </li>
       {% endif %}
 
+      {% if author.github %}
+        <li>
+          <a href="https://github.com/{{ author.github }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.hackthebox %}
         <li>
           <a href="https://app.hackthebox.com/users/{{ author.hackthebox }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
@@ -152,14 +160,6 @@
         <li>
           <a href="https://bitbucket.org/{{ author.bitbucket }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket
-          </a>
-        </li>
-      {% endif %}
-
-      {% if author.github %}
-        <li>
-          <a href="https://github.com/{{ author.github }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
           </a>
         </li>
       {% endif %}
